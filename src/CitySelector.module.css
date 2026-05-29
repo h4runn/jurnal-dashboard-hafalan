@@ -1,0 +1,68 @@
+.navWrapper {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Kustom Scrollbar Tipis untuk Navigasi */
+.navWrapper::-webkit-scrollbar {
+  height: 4px;
+}
+.navWrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.cityTab {
+  flex: 1;
+  min-width: 220px;
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f8fafc;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cityTab:hover {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(6, 182, 212, 0.3);
+  transform: translateY(-2px);
+}
+
+.activeTab {
+  background: rgba(15, 23, 42, 0.8);
+  border-color: #06b6d4; /* Neon Cyan */
+  box-shadow: 0 0 16px rgba(6, 182, 212, 0.15);
+}
+
+.tabLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.tabIcon {
+  font-size: 1.5rem;
+}
+
+.cityName {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cityCountry {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.12rem;
+}
+
+.tabTemp {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
